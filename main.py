@@ -41,16 +41,17 @@ if p==1:
 elif p==2:
     moy_boy = Graph(naprav=True)
 
-for v in input("write nodes: ").split():
+for v in input("Напишите все вершины: ").split():
     moy_boy.add_yzel(v)
 
-print("write edges")
+print("Напишите пути")
 while True:
     l = input().strip()
     if not l:
         break
     s, d = l.split()
     moy_boy.add_pyt(s,d)
+print("Напишите стартовую вершину")
 start = input()
 
 
